@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rbtstyle.css" />
+    <title>ASCII Kod Bulucu</title>
+  </head>
+  <body>
+    <div class="language-selector">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('tr')">Türkçe</button>
+    </div>
+    <div id="name" class="name">Tolga Uğurlu</div>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+      <div id="toggleTheme">Gece Modu</div>
+    </div>
+    <div id="tutorialButton" class="tutorial-button" onclick="toggleTutorial()">
+      Eğitim Modu
+    </div>
+    <div id="insert" class="key-info">
+      <div class="key">İstediğiniz herhangi bir tuşa basın</div>
+    </div>
+    <div id="tutorial" class="tutorial-content" style="display: none">
+      <!-- Tutorial content will go here -->
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
